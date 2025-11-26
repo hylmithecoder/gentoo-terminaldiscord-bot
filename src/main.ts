@@ -124,7 +124,7 @@ async function route() {
     const PORT = 30010;
 
     app.post(
-        '/interactions',
+        '/api/interactions',
         verifyKeyMiddleware(PUBLIC_KEY)
     )
 
