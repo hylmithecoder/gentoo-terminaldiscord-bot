@@ -116,7 +116,7 @@ async function handleShellCommand(message: any, userId: string, cwd: string, com
         // Tambahkan info eksekusi
         formattedOutput += `\n*Executed in ${execTime}ms | CWD: \`${cwd}\`*`;
         
-        message.channel.send(formattedOutput).catch((sendErr: any) => {
+        message.reply(formattedOutput).catch((sendErr: any) => {
             console.error("[ERROR] Failed to send message:", sendErr);
             message.reply("❌ Gagal mengirim output (mungkin terlalu panjang atau ada karakter invalid)");
         });
