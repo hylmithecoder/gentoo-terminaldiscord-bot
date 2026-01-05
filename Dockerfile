@@ -53,7 +53,7 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | b
 
 # (Optional) masukkan AUTHTOKEN biar container langsung siap
 # ATAU lu bisa set via runtime `docker run -e NGROK_AUTHTOKEN=...`
-ENV NGROK_AUTHTOKEN="2vGVb5x8ubkdbcfs7GxJGu1WTmc_5Nmw5Cv8XTUS8QmfaA39y"
+ENV NGROK_AUTHTOKEN="YOUR_AUTH_TOKEN"
 
 RUN /usr/local/bin/ngrok config add-authtoken $NGROK_AUTHTOKEN
 
